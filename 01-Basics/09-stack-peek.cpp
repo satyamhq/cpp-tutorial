@@ -1,6 +1,6 @@
 /* Given a stack, implement it using an array where stack = [10, 20, 30] 
 and the current top element is at index 2. Write a program to peek the top
- element of the stack and display the value without removing or modifying it.*/
+element of the stack and display the value without removing or modifying it.*/
 
 #include <iostream>
 using namespace std;
