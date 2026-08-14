@@ -1,3 +1,5 @@
+// A linked list stores data in nodes, where each node points to the next node.
+
 #include <iostream>
 using namespace std;
 
