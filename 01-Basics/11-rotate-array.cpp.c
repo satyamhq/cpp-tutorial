@@ -1,6 +1,6 @@
 // Given an array rotate to the right by k positions
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
