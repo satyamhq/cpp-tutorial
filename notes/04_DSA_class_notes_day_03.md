@@ -4,7 +4,7 @@
 
 **Complexity** tells us how much **time and memory** an algorithm needs as the input size (`n`) increases.
 
-**Example:** If we have 1000 numbers instead of 10 numbers, complexity tells us how the algorithm's performance changes.
+**Example:** If we have 1000 numbers instead of 10, complexity tells us how the algorithm's performance changes.
 
 ---
 
@@ -14,6 +14,7 @@
 * To find which algorithm is faster.
 * To reduce memory usage.
 * To make programs efficient for large inputs.
+* **Bottleneck:** A specific part of code that slows down the execution of the entire program.
 
 ---
 
@@ -21,17 +22,15 @@
 
 We mainly use **Big-O notation (`O`)**.
 
-Big-O describes the **growth rate** of an algorithm as the input size `n` increases.
+Big-O describes how the **resource usage grows** as input size `n` increases.
 
 ---
 
 ## 4. Where is Complexity used in Real Life?
 
-Complexity is important in:
-
-* Searching in Google
+* Google/Search
 * Sorting large data
-* Social media applications
+* Social media
 * GPS and Maps
 * Database systems
 * AI and Machine Learning
@@ -52,19 +51,15 @@ for i = 1 to n
 
 The loop runs `n` times.
 
-Therefore:
-
 **Time Complexity = O(n)**
 
 ---
 
 ## 6. Space Complexity
 
-**Space Complexity** tells how much **extra memory** an algorithm needs as the input size grows.
+**Space Complexity** tells how much **extra memory** an algorithm needs as input size grows.
 
-### Example
-
-If an algorithm creates an array of size `n`:
+**Example:** An array of size `n` requires:
 
 **Space Complexity = O(n)**
 
@@ -72,59 +67,102 @@ If an algorithm creates an array of size `n`:
 
 ## 7. Time-Space Trade-off
 
-A **time-space trade-off** means we can sometimes:
+Sometimes we can:
 
 * Use **more memory to save time**, or
 * Use **less memory but take more time**.
 
-### Example
-
-Using a **Hash Table** requires extra memory but makes searching faster.
+**Example:** A Hash Table uses extra memory but provides faster searching.
 
 ---
 
 # 8. Common Time Complexities
 
-| Complexity     | Name         | Simple Meaning                         |
-| -------------- | ------------ | -------------------------------------- |
-| **O(1)**       | Constant     | Same time regardless of `n`            |
-| **O(log n)**   | Logarithmic  | Very fast; input reduces step by step  |
-| **O(n)**       | Linear       | Time increases directly with `n`       |
-| **O(n log n)** | Linearithmic | Common in efficient sorting            |
-| **O(n²)**      | Quadratic    | Usually occurs with nested loops       |
-| **O(2ⁿ)**      | Exponential  | Becomes very slow for large `n`        |
-| **O(n!)**      | Factorial    | Extremely slow; tries all arrangements |
+| Complexity     | Name         | Example         |
+| -------------- | ------------ | --------------- |
+| **O(1)**       | Constant     | Array access    |
+| **O(log n)**   | Logarithmic  | Binary Search   |
+| **O(n)**       | Linear       | Linear Search   |
+| **O(n log n)** | Linearithmic | Merge Sort      |
+| **O(n²)**      | Quadratic    | Bubble Sort     |
+| **O(2ⁿ)**      | Exponential  | Subset problems |
+| **O(n!)**      | Factorial    | Permutations    |
 
-## Order from Fastest to Slowest
+### Fastest → Slowest
 
 **O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)**
 
-> Note: Write **O(1)** instead of just **O**, and **O(n)** instead of **o(n)** when listing common Big-O complexities.
+---
+
+# 9. Asymptotic Notations
+
+Asymptotic notation describes the performance of an algorithm as `n` becomes very large.
+
+### Big-O — `O`
+
+Represents the **upper bound** of an algorithm's growth.
+
+**Example:** `O(n)`
+
+### Omega — `Ω`
+
+Represents the **lower bound** of an algorithm's growth.
+
+**Example:** `Ω(n)`
+
+### Theta — `Θ`
+
+Represents the **tight bound** — both upper and lower bounds.
+
+**Example:** `Θ(n)`
 
 ---
 
-## 9. Simple Examples
+# 10. Three Key Concepts
 
-* **O(1):** Accessing `arr[5]`
-* **O(log n):** Binary Search
-* **O(n):** Linear Search
-* **O(n log n):** Merge Sort
-* **O(n²):** Bubble Sort
-* **O(2ⁿ):** Some recursive subset problems
-* **O(n!):** Trying every possible permutation
+### 1. Input Size (`n`)
+
+The number of elements or amount of data an algorithm must process.
+
+### 2. Growth Rate
+
+How quickly the resource usage increases as `n` increases.
+
+### 3. Best, Average and Worst Case
+
+Different input situations can give different running times for the same algorithm.
+
+* **Best Case:** Minimum time
+* **Average Case:** Expected/average time
+* **Worst Case:** Maximum time
 
 ---
 
-## 10. Quick Revision
+# 11. Why Complexity is Important?
 
-**Time Complexity →** How much time an algorithm takes.
+1. **Compare algorithms objectively**
+2. **Predict performance for large inputs**
+3. **Identify bottlenecks in code**
+4. **Make better design decisions**
 
-**Space Complexity →** How much extra memory an algorithm uses.
+---
 
-**Big-O →** Describes how complexity grows when input size increases.
+# 12. Quick Revision
 
-**Trade-off →** Sometimes we use more memory to make the algorithm faster.
+**Time Complexity →** Time taken by an algorithm.
 
-**Main order:**
+**Space Complexity →** Extra memory used by an algorithm.
+
+**Big-O →** Upper bound.
+
+**Omega (Ω) →** Lower bound.
+
+**Theta (Θ) →** Tight bound.
+
+**Bottleneck →** Part of code that slows down the program.
+
+**Trade-off →** Using more memory to reduce execution time.
+
+**Main Order:**
 
 `O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)`
