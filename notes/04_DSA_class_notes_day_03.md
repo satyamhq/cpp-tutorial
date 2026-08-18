@@ -1,11 +1,4 @@
-# Introduction: Complexity
--- How much time and memory does an algorithm really needes as its input grows?
--- What
---Why
--- How
--- Where (real world)
-
--- Time compkexity , Space Complexity, Trade-off, # Introduction to Complexity
+# Introduction to Complexity
 
 ## 1. What is Complexity?
 
@@ -135,6 +128,3 @@ Using a **Hash Table** requires extra memory but makes searching faster.
 **Main order:**
 
 `O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)`
-
-
-O(1) < O < O(log n) < o(n) < O(n log n) < O(n**2) < O(2**n) < O(m!)
