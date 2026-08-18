@@ -1,13 +1,13 @@
 // Given an array rotate to the right by k positions
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
     int n, k;
     cin >> n >> k;
 
-    int a[n];
+    int a[100];
 
     for (int i = 0; i < n; i++) {
         cin >> a[i];
@@ -15,7 +15,6 @@ int main() {
 
     k = k % n;
 
-    // Rotate right by k positions
     for (int r = 0; r < k; r++) {
         int last = a[n - 1];
 
