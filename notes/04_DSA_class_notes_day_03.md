@@ -160,7 +160,7 @@ Different input situations can give different running times for the same algorit
 **Theta (Θ) →** Tight bound.
 
 **Bottleneck →** Part of code that slows down the program.
-
+![alt text](Time-and-Space-Complexity.jpeg)
 **Trade-off →** Using more memory to reduce execution time.
 
 **Main Order:**
